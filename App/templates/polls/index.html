@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %} Choose question {% endblock %}
+
+{% block content %}
+  <br>
+  <h2>Questions:</h2>
+  <br>
+  {% for q in questions %}
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ q.question_text }}</h5>
+        <a href="{% url 'detail' q.pk %}" class="btn-sm btn-primary">Vote</a>
+        <a href="{% url 'results' q.pk %}" class="btn-sm btn-success">Results</a>
+      </div>
+    </div>
+    <br>
+  {% endfor %}
+{% endblock %}
