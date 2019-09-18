@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#brandLogo {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    top: 3px;
+}
+
+
+#brandTitle {
+    padding: 0;
+    padding-left: 40px;
+    margin: 0;  
+}
+
+#welcomeAuthBox > a {
+    color: white;
+    padding-right: 10px;
+}
+
+#jumbotronBox {
+    background-image: url(../img/jumbo.jpeg);
+    background-position: bottom;
+    margin: 0;
+    border-radius: 0;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+#welcomeJumboTitle {
+}
+
+#welcomeJumboButton {
+    width: 100px;
+}
+
+#welcomeColumnBox {
+    padding-top:30px;
+}
+
+#welcomeColumnTitle {
+    display: flex;
+    justify-content: center;
+}
+

@@ -1,6 +1,11 @@
+{% load static from staticfiles %}
+
 <nav class="navbar navbar-dark bg-primary">
-  <a class="navbar-brand m-auto h1" href="{% url 'welcome:index' %}">POLLIFY</a>
-  <div class="m-right">
+  <div>
+      <img id="brandLogo" src="{% static '/img/brillant.png' %}"/>
+      <a id="brandTitle" class="navbar-brand" href="{% url 'welcome:index' %}">Brilliant</a>
+  </div>
+  <div id="welcomeAuthBox" class="m-right">
       <a href="{% url 'welcome:login' %}" class="nav-item">Login</a>
       <a href="{% url 'welcome:register' %}" class="nav-item">Register</a>
   </div>

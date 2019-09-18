@@ -3,15 +3,20 @@
 {% block title %} Choose question {% endblock %}
 
 {% block content %}
-<div class="container-fluid">
-    <div class="jumbotron">
-        <h1 class="display-4">Welcome on Pollify</h1>
+    <div id="jumbotronBox" class="jumbotron">
+        <h1 id="welcomeJumboTitle">Future is in your hands!</h1>
+        <button id="welcomeJumboButton" class="btn btn-primary">Learn</button>
     </div>
-    <div class="row">
-        <div class="col m-auto">Col 1</div>
-        <div class="col">Col 2</div>
-        <div class="col">Col 3</div>
+    <div id="welcomeColumnBox" class="row">
+        <div class="col-md">
+            <div id="welcomeColumnTitle"><span class="h3">Willpower</span></div>
+        </div>
+        <div class="col-md">
+                <div id="welcomeColumnTitle"><span class="h3">Always work</span></div>
+        </div>
+        <div class="col-md">
+                <div id="welcomeColumnTitle"><span class="h3">Always for people</span></div>
+        </div>
     </div>
-</div>
   
 {% endblock %}
