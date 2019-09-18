@@ -19,6 +19,7 @@ from django.urls import path, include
 admin.site.site_header = 'Pollify Admin Panel'
 
 urlpatterns = [
-    path('', include('polls.urls')),
+    path('', include('welcome.urls')),
+    path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
 ]
